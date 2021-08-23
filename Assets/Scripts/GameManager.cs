@@ -23,11 +23,11 @@ public class GameManager : MonoBehaviour
     public bool isGameOver = false;
     public bool isFPSCamera;
 
-    [SerializeField] private int numberOfRedSoldiers = 10;
-    [SerializeField] private int numberOfBlueSoldiers = 10;
+    [SerializeField] private int numberOfRedSoldiers;
+    [SerializeField] private int numberOfBlueSoldiers;
     [SerializeField] private int score = 0;
-    [SerializeField] private float wavesTime = 3f;
-    [SerializeField] private float startWavesTime = 1f;
+    [SerializeField] private float wavesTime;
+    [SerializeField] private float startWavesTime;
 
     [Header("Cameras")]
     public GameObject isometricCamera;
@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
         FPSCamera.SetActive(false);
         isGameOver = false;
         isFPSCamera = false;
-        numberOfRedSoldiers = 10;
+        //numberOfRedSoldiers = 1;
         score = 0;
 
     }

@@ -15,6 +15,7 @@ public class BulletCollision : MonoBehaviour
     {
         if (other.tag == "redSoldier")
         {
+            Debug.Log("Muere bicho");
             GameManager.GM.Score();
             Destroy(other.gameObject);
             Destroy(gameObject);

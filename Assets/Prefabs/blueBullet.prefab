@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 80
-  target: {fileID: 278597203972546642, guid: 26351e6aa47cc4b7b95d7706f76c072a, type: 3}
+  target: {fileID: 240578591221720077, guid: a0674e10235e8413da74846061aa6b67, type: 3}
 --- !u!135 &4374281256603675762
 SphereCollider:
   m_ObjectHideFlags: 0
