@@ -70,6 +70,7 @@ public class Tower : MonoBehaviour
             GameManager.GM.FPSCamera.SetActive(true);
             GameManager.GM.isometricCamera.SetActive(false);
             GameManager.GM.isFPSCamera = true;
+            Debug.Log("Activa FPS View");
         }
     }
     private void LookRotation()
