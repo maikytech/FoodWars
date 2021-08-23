@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Linq;
 using UnityEngine.UI;
 
-public class Tower : MonoBehaviour
+public class Tower2 : MonoBehaviour
 {
     [Header("Shoot")]
     [SerializeField]private float triggerRange;

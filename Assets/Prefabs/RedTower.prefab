@@ -111,7 +111,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4232179807832127079
 Transform:
@@ -141,7 +141,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4232179808095582990
 Transform:
@@ -171,13 +171,13 @@ GameObject:
   - component: {fileID: 4232179808468371475}
   - component: {fileID: 4232179808468371477}
   - component: {fileID: 4232179808468371478}
-  - component: {fileID: 4232179808468371476}
+  - component: {fileID: 514618906}
   m_Layer: 0
   m_Name: RedTower
   m_TagString: redTower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4232179808468371475
 Transform:
@@ -219,7 +219,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4232179808468371476
+--- !u!114 &514618906
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -228,19 +228,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 4232179808468371479}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4522fe91fb8a6754a8fe451e5807e631, type: 3}
+  m_Script: {fileID: 11500000, guid: bf949f63d70044c518606f8947403d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerRange: 0
+  triggerRange: 50
+  closeTriggerRange: 30
   timeToShoot: 0.3
-  rotationPart: {fileID: 4232179807104938524}
-  shootPosition: {fileID: 4232179808603894813}
-  currentTarget: {fileID: 278597203972546642, guid: 02b0c5bc9232d7e46a600ece1668a2d5, type: 3}
-  bullet: {fileID: -8579212596507997247, guid: 57223643ce3c531479cadd25d98fe586, type: 3}
+  stopShoot: 0
+  rotationPart: {fileID: 0}
+  shootPosition: {fileID: 0}
+  currentTarget: {fileID: 0}
+  bullet: {fileID: 0}
   currentTargets: []
   closeTargets: []
+  bigTarget: {fileID: 0}
   fillLifeImage: {fileID: 0}
-  maxLife: 50
+  maxLife: 0
   currentLife: 0
   isDead: 0
 --- !u!1 &4232179808473227943
@@ -260,7 +263,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4232179808473227942
 Transform:
@@ -484,7 +487,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 0
 --- !u!4 &4232179808678438900
 Transform:
